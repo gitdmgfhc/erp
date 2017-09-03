@@ -1,0 +1,50 @@
+/*外层边框样式*/
+.box {
+
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+/*输入框样式*/
+.box .input {
+
+    height: 100px;
+    width: 300px;
+    padding: 0;
+    border: 0;
+    background-color: #6b6363;
+    text-align: right;
+    font-size: 50px;
+    line-height: 100px;
+    overflow: hidden;
+
+}
+
+/*按钮样式*/
+.box .btn div {
+    height: 58px;
+    width: 73px;
+    border: 1px solid #000;
+    float: left;
+    line-height: 58px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/*加减乘除类*/
+.box .btn .btn_cal {
+    background-color: #fbb73b;
+}
+
+.box .btn .btn_top{
+    /*border-top: none;*/
+}
+
+    /*鼠标滑动效果类*/
+.btn_color {
+
+    background-color: #7ba587 !important;
+}

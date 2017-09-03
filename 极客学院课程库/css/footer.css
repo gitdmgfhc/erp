@@ -1,0 +1,160 @@
+/*底部栏目样式*/
+.footer {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.footer-middle {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.jkinfor {
+    position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.jkinfor .jk-logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+
+.jkinfor .jk-logo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+.jkinfor .jk-logo p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.jkinfor dl {
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+
+.jkinfor dl dt {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.jkinfor dl dd a:hover {
+    color: #35B558;
+}
+
+.jk-down {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+}
+
+.jk-down .hot-tel {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.jk-down .down-ios {
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-ios.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.jk-down .downCon {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.jk-down .downCon img {
+    display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+
+.jk-down .down-and {
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-and.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.footer {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer .copyright a {
+    text-decoration: none;
+    color: #999;
+}
+
+.footer .copyright a:hover {
+    color: #35B558;
+}
+
+.copyright strong {
+    font-weight: 400;
+}
+
+.footer .copyright a.down-sina {
+    float: right;
+    height: 15px;
+    width: 20px;
+    margin-right: 10px;
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-sina.png) no-repeat 0 0;
+    background-size: 20px 15px;
+}
+
+.footer .copyright a.down-wechat {
+    float: right;
+    height: 15px;
+    width: 20px;
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png) no-repeat 0 0;
+    background-size: 18px 15px;
+}

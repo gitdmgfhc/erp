@@ -1,0 +1,622 @@
+﻿body,
+html {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: 100%;
+}
+.wrapper{
+    height: 100%;
+    position: relative;
+    min-height: 500px;
+}
+
+header {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+header nav a {
+    margin-left: 15px;
+}
+
+/*糯米、新闻、hao123、地图、视频、贴吧样式*/
+.mnav {
+    float: right;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/*登陆样式*/
+#u1 a.lb {
+    display: inline-block;
+    float: right;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+/*设置样式*/
+#u1 a.pf {
+    display: inline-block;
+    float: right;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+/*设置下拉效果*/
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+/*设置边框效果*/
+.baidu-setting {
+    position: absolute;
+    top: 29px;
+    right: 72px;
+    width: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    display: none;
+}
+/*标签样式*/
+.baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+}
+/*三角符号框*/
+.baidu-setting .icon-trangle {
+    position: absolute;
+    display: block;
+    top: -11px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+/*三角符号内容*/
+.baidu-setting .icon-trangle:after {
+    content: '.';
+    position: absolute;
+    display: block;
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+/*更多产品样式*/
+#u1 a.bri {
+    width: 60px;
+    height: 23px;
+    float: right;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+/*更多产品滑动显示*/
+.moreProduct:hover .more-product {
+
+    display: block;
+}
+
+/*更多产品样式*/
+.more-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    text-align: center;
+    padding: 0 10px;
+}
+/*更多产品列表样式*/
+.more-product li {
+    list-style: none;
+    height: 76px;
+    width: 66px;
+    border-bottom: 1px solid #ddd;
+}
+/*更多产品标签图片样式*/
+.more-product span {
+    display: block;
+    width: 40px;
+    height: 36px;
+    margin: 10px auto;
+
+}
+
+/*下拉更多产品样式*/
+.more-product .more-sub-btn {
+
+    height: 25px;
+    font-size: 13px;
+}
+
+/*下拉更多产品文字标签位移*/
+.more-product .more-sub-btn a {
+    position: relative;
+    bottom: 5px;
+}
+
+/*下拉全部产品样式*/
+.more-product .more-sub-all {
+
+    border-bottom: 0;
+    padding-top: 10px;
+}
+
+/*更多产品下拉栏边距*/
+.more-product ul {
+    padding: 0;
+}
+
+/*更多产品a标签内容样式*/
+.more-product li a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #666;
+}
+
+.more-product .more-sub-one {
+    background: url("../img/music.png") no-repeat;
+}
+
+.more-product .more-sub-two {
+    background: url("../img/image.png") no-repeat;
+}
+
+.more-product .more-sub-three {
+    background: url("../img/zhidao.png") no-repeat;
+}
+
+.more-product .more-sub-four {
+    background: url("../img/wenku.png") no-repeat;
+}
+
+.more-product .more-sub-five {
+    background: url("../img/bang.png") no-repeat;
+}
+
+.more-product .more-sub-six {
+    background: url("../img/tuiguang.png") no-repeat;
+}
+
+/*百度按钮间隙问题解决*/
+form {
+    font-size: 0;
+}
+
+/*正文*/
+.content {
+    text-align: center;
+    margin-top: 4%;
+}
+
+/*搜索按钮*/
+.content input {
+    display: inline-block;
+    line-height: 34px;
+    width: 540px;
+    height: 32px;
+    border: 1px solid #9E9E9E;
+    padding: 3px 0 3px 10px;
+    font-size: 18px;
+    border-right-width: 0;
+    vertical-align: top;
+
+}
+
+/*搜索框图标*/
+.mic {
+    display: inline-block;
+    position: relative;
+    background: url(../img/mic.png) no-repeat;
+    height: 16px;
+    width: 18px;
+    background-position: 0 0px;
+    right: 127px;
+    top: 11px;
+    cursor: pointer;
+}
+
+/*图标滑动变色效果*/
+.mic:hover {
+
+    background-position: 0 -20px
+}
+
+/*按钮*/
+.content button {
+    width: 100px;
+    height: 40px;
+    background: #3385ff;
+    color: #fff;
+    border-left-width: 0;
+    border: 1px solid #3385ff;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+/*百度图标*/
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+/*底部信息*/
+
+/*底部a标签色彩*/
+footer a {
+    color: #999;
+}
+
+/*底部文字居中*/
+footer p {
+    text-align: center;
+}
+
+/*底部样式*/
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    width: 100%;
+}
+
+/*底部公司图标*/
+footer .icon-copyright {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../img/copyrignt.png) no-repeat;
+    top: 2px;
+}
+
+/*隐藏手机样式*/
+.phone {
+    display: none;
+}
+
+/*768像素及以下的移动设备适配*/
+@media only screen and (max-width: 768px) {
+
+    body{
+        background: #f8f8f8;
+    }
+    .wrapper {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    /*天气效果*/
+    .weather {
+        position: absolute;
+        background: url(../img/mobile/weather.png) no-repeat;
+        width: 160px;
+        height: 40px;
+    }
+
+    /*登陆样式*/
+    #login {
+        display: block;
+        background-image: url("../img/mobile/login.png");
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        background-size: 100% 100%;
+        float: right;
+        margin: 8px 8px 0 0;
+    }
+
+
+    .login-wraps {
+        height: 35px;
+    }
+
+    /*百度图片样式*/
+    .img-phone {
+        height: 57px;
+    }
+
+    /*body内容居中*/
+    body {
+        text-align: center;
+    }
+
+    /*搜索区域外层样式，进行页面布局及搜索框左右排列*/
+    .input-phone {
+        margin-top: 20px;
+        padding: 0 12px;
+    }
+
+
+    /*表单设置为flex盒子，实现搜索框的宽度自动适配，清除字体解决搜索框和按钮中间有空隙的问题*/
+    .form-phone {
+        display: flex;
+        font-size: 0;
+        position: relative;
+    }
+
+    .icon-app{
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 20px;
+        background: url(../img/mobile/mmsicon.png) no-repeat;
+        top: 13px;
+        right: 87px;
+        background-position: 1px 0;
+        background-size: 33px 19px;
+    }
+
+
+    /*搜索框样式*/
+    .se-input {
+        height: 41px;
+        border: 1px solid #9E9E9E;
+        flex: 1;
+        border-right-width: 0;
+    }
+
+    /*百度一下按钮样式*/
+    .se-bn {
+        width: 82px;
+        height: 45px;
+        background: #38f;
+        color: #fff;
+        font-size: 16px;
+        border-top: 1px solid #38f;
+        border-bottom: 1px solid #38f;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        min-width: 82px;
+        border-left-width: 0;
+    }
+
+    /*图标样式*/
+    .ns-icon {
+        display: block;
+        background: url(../img/mobile/ns.png) no-repeat;
+        background-size: 22px auto;
+        width: 22px;
+        height: 22px;
+        margin: 0 auto;
+    }
+
+    /*关注*/
+    .ns-focus {
+        background-position: 0 -264px;
+    }
+
+    /*新闻*/
+    .ns-news {
+        background-position: 0 -396px;
+    }
+
+    /*小说*/
+    .ns-novel {
+        background-position: 0 -330px;
+    }
+
+    /*视频*/
+    .ns-video {
+        background-position: 0 -462px;
+    }
+
+    /*糯米*/
+    .ns-life {
+        background-position: 0 -418px;
+    }
+
+    /*地图*/
+    .ns-map {
+        background-position: 0 -308px;
+    }
+
+    /*文本样式*/
+    .ns-text {
+        font-size: 13px;
+        color: #999;
+        padding-top: 8px;
+        display: block;
+    }
+
+    /*外层链接样式*/
+    .ns-a {
+        display: block;
+        width: 16.6%;
+        height: 45px;
+        float: left;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    /*外层链接样式*/
+    .link-phone {
+        width: 100%;
+        height: 43px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    /*新闻内容*/
+    .news-content {
+        font-weight: normal;
+        color: #333;
+        font-size: 18px;
+        line-height: 26px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-decoration: none;
+    }
+    /*新闻列表*/
+    .news-list {
+        margin-top: 10px;
+        text-align: left;
+        padding: 0 10px;
+    }
+    /*图片框样式*/
+    .img-wrap {
+        display: inline-block;
+        width: 33.105%;
+        margin-right: -2px;
+        height: 0;
+        padding-top: 21.99%;
+        position: relative;
+        vertical-align: top;
+    }
+    /*图片样式*/
+    .img-wrap img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    /*新闻来源样式*/
+    .news-from{
+        margin-top: 5px;
+    }
+    /*新闻来源字体*/
+    .news-from span{
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+    }
+
+}
+
+/*600像素以上的移动设备适配*/
+@media only screen and (min-width: 600px) and  (max-width: 768px) {
+
+    /*新闻内容*/
+    .news-content {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    /*图标框*/
+    .link-phone {
+        margin-bottom: 60px;
+    }
+    /*图片尺寸*/
+    .ns-icon {
+        background-size: 40px auto;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    /*关注*/
+    .ns-focus {
+        background-position: 0 -480px;
+    }
+    /*新闻*/
+    .ns-news {
+        background-position: 0 -720px;
+    }
+    /*小说*/
+    .ns-novel {
+        background-position: 0 -598px;
+    }
+    /*视频*/
+    .ns-video {
+        background-position: 0 -839px;
+    }
+    /*糯米*/
+    .ns-life {
+        background-position: 0 -760px;
+    }
+    /*地图*/
+    .ns-map {
+        background-position: 0 -559px;
+    }
+    /*正文字体*/
+    .ns-text {
+        font-size: 26px;
+    }
+    /*输入框高度*/
+    .se-input {
+        height: 60px;
+    }
+    /*按钮尺寸*/
+    .se-bn{
+        width: 110px;
+        height: 64px;
+        font-size: 24px;
+    }
+    /*麦克风图标*/
+    .icon-app {
+
+        width: 28px;
+        height: 53px;
+        top: 12px;
+        right: 128px;
+        background-position: 1px 0;
+        background-size: 70px 40px;
+    }
+    /*麦克风图片大小*/
+    .img-phone img{
+        width: 240px;
+        height: 80px;
+    }
+
+    .img-phone {
+        height: 80px;
+    }
+    /*登陆布局*/
+    .login-wraps {
+        height: 50px;
+    }
+    /*登陆图标尺寸*/
+    #login {
+        width: 40px;
+        height: 40px;
+
+    }
+}
+

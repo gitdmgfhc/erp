@@ -1,0 +1,484 @@
+/*行头样式*/
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/*列头*/
+.header {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+}
+
+.header .nav {
+    position: relative;
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header a, .header i, .header h3 {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+
+}
+
+/*首页LOGO框*/
+.header .nav .logo {
+    width: 109px;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+}
+
+/*首页LOGO图片*/
+.header .nav .logo img {
+    float: left;
+    width: 109px;
+    margin-top: 10px;
+    border: 0 none;
+}
+
+.header .nav ul {
+    list-style: none;
+}
+
+/*NAV区域三角形效果*/
+.header .nav .nav-left li:hover .arrow-icon {
+    border-color: rgb(53, 181, 88);
+    animation: arrow_animation 0.5s ease-out forwards;
+    -moz-animation: arrow_animation 0.5s ease-out forwards;
+    -webkit-animation: arrow_animation 0.5s ease-out forwards;
+}
+
+@keyframes arrow_animation {
+    0% {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+    }
+    70% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+
+    99% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+    }
+}
+
+/*标签样式*/
+.header .nav a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+/*首个标签样式*/
+.header .nav .nav-left li a.first {
+    color: rgb(53, 181, 88);
+}
+
+/*左侧标签样式*/
+.header .nav .nav-left li {
+    float: left;
+    font-size: 14px;
+    height: 60px;
+    text-align: center;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+/*箭头样式*/
+.header .nav .nav-left li .arrow-icon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+/*下拉列表样式*/
+.header .nav .nav-left .submenu {
+    display: none;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+    text-align: left;
+}
+
+/*NAV职业学院标签样式*/
+.header .nav .nav-left .school-list {
+    position: absolute;
+    z-index: 1200;
+    top: 60px;
+    border-top: 1px solid #f5f5f5;
+    left: 242px;
+}
+
+.header .nav .nav-left .submenu h3 {
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.header .nav .nav-left .school-list a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+/*滑动效果*/
+.header .nav .nav-left .submenu a:hover {
+
+    color: #35b558;
+}
+
+.school-list i {
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px !important;
+}
+
+.school-list i.web-icon {
+    background: url(../images/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -15px -27px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px !important;
+}
+
+.school-list i.android-icon {
+    background: url(../images/allicon4.png) 0 0 no-repeat;
+    background-position: 0 -61px;
+    background-size: 16px 148px;
+}
+
+.school-list i.python-icon {
+    background: url(../images/allicon4.png) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 16px 148px;
+}
+
+.school-list i.go-icon {
+    background: url(../images/allicon4.png) 0 0 no-repeat;
+    background-position: 0 -38px;
+    background-size: 16px 148px;
+}
+
+.school-list i.ios-icon {
+    background: url(../images/allicon4.png) 0 0 no-repeat;
+    background-position: 0 -81px;
+    background-size: 16px 148px;
+}
+
+.header .nav .vip-lesson a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    padding: 0 15px;
+}
+
+.vip-lesson i {
+    background: url(../images/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px !important;
+}
+
+.vip-lesson i.kck-icon {
+    background-position: 0 -13px;
+}
+
+.vip-lesson i.zyljt-icon {
+    background-position: -45px 0;
+}
+
+.vip-lesson i.zstxt-icon {
+    background-position: -30px -13px;
+}
+
+.vip-lesson i.xlkc-icon {
+    background-position: -30px -13px;
+}
+
+.vip-lesson i.kcbq-icon {
+    background-position: -15px -13px;
+}
+
+.vip-lesson i.vip-icon {
+    background-position: -16px 0;
+
+}
+
+.header .nav .nav-left .vip-lesson span {
+    float: right;
+    color: #bbb;
+}
+
+.header .nav .nav-left .vip-lesson {
+    position: absolute;
+    z-index: 1001;
+    top: 60px;
+    border-top: 1px solid #f5f5f5;
+    left: 368px;
+    padding: 10px 0;
+}
+
+#shequ {
+    z-index: 1001;
+    top: 60px;
+    left: 485px;
+}
+
+/*右侧区域样式*/
+.header .nav .nav-right {
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.header .nav .nav-right span {
+    display: inline-block;
+    height: 60px;
+    width: 17px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header .nav .nav-right span.icon-search {
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+
+}
+
+.header .nav .nav-right span.icon-app {
+    background: url("../images/app-icon.png") 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+.header .nav .nav-right span.icon-app .submenu {
+    position: absolute;
+    display: none;
+    padding: 0;
+    background: #fff;
+    width: 120px;
+    z-index: 1200;
+    top: 60px;
+    right: 5px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.header .nav .nav-right span.icon-app .submenu img {
+
+    width: 100%;
+}
+
+.header .nav .nav-right span.icon-app .submenu .top-icon {
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    top: -8px;
+    right: 52px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #fff;
+}
+
+.header .nav .nav-right span.icon-login {
+    background: url("../images/login-icon.png") 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+.header .nav .nav-right span.icon-login .submenu {
+    display: none;
+    padding: 10px 0;
+    background: #fff;
+    position: absolute;
+    width: 120px;
+    z-index: 1200;
+    top: 59px;
+    border-top: 1px solid #f5f5f5;
+    right: 3px;
+}
+
+.header .nav .nav-right span.icon-login .submenu dd {
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.nav-right span.icon-login .submenu dd a:hover {
+    background: #f5f5f5;
+    color: #35b558;
+}
+
+span.icon-login .submenu dd .reg-btn, span.icon-login .submenu dd .login-btn {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.header span.icon-login dd i {
+    background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon2.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+
+.header .nav .nav-right span.icon-login .submenu .top-icon {
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #fff;
+}
+
+.header span.icon-login .xxzx-icon {
+    background-position: -16px -15px;
+}
+
+.header span.icon-login .grzy-icon {
+    background-position: -45px -1px;
+}
+
+.header span.icon-login .xxtz-icon {
+    background-position: -16px -30px;
+}
+
+.header span.icon-login .zhsz-icon {
+    background-position: -30px -1px;
+}
+
+.header .nav .search-box {
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+    display: none;
+}
+
+.search-box .search-icon {
+    background: url(../images/search-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+}
+
+.header .search-box input {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.header .search-box .tagbox {
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+
+.header .search-box .tagbox a {
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+.header .search-box .tagbox .close-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url(../images/close-icon.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+}
