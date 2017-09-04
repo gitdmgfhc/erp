@@ -8,3 +8,4 @@ xiugaile master
 nihao jintian tianqibucuo
 nihao jintian tianqibucuo
 test -no -ff
+static 
